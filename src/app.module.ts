@@ -13,16 +13,16 @@ import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handleba
   imports: [
     MailerModule.forRoot({
       transport: {
-        host: 'smtp.gmail.com',
-        port: 587,
-        secure: false,
+        host: 'smtp.zoho.eu',
+        port: 465,
+        secure: true,
         auth: {
-          user: 'blackomegadu42@gmail.com',
-          pass: 'dqrd lwcl evvb yvej',
+          user: 'support@nuvity.net',
+          pass: 'Beyblade2001@@',
         },
       },
       defaults: {
-        from: '"Society" <blackomegadu42@gmail.com>',
+        from: '"Nuvity" <support@nuvity.net>',
       },
       template: {
         dir: join(process.cwd(), "templates"),

@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'https://charming-paletas-838342.netlify.app',
+    origin: 'https://nuvity.net',
     credentials: true,
   });
 
